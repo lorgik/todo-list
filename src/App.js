@@ -1,16 +1,12 @@
 import './App.css';
+import Header from "./Header/Header";
+import Main from "./Main/Main";
 
-function App() {
+const App = () => {
     return (
         <div className='app'>
-            <div className='header'>
-                <div>
-                    <h1>Todo list</h1>
-                </div>
-            </div>
-            <div className='main'>
-                MAIN
-            </div>
+            <Header />
+            <Main />
         </div>
     );
 }

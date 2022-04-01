@@ -1,23 +1,4 @@
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    color: #fff;
-}
-
-body {
-    background: #1d1d1d;
-}
-
 .app {
     display: grid;
-    grid-template-rows: 150px 1fr;
-}
-
-.header, .main {
-    border: 1px solid antiquewhite;
-}
-
-h1 {
-    text-align: center;
+    grid-template-rows: 100px 1fr;
 }

@@ -1,0 +1,53 @@
+.main {
+    background-color: #0083d6;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 30px 0;
+}
+    
+.form {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 350px;
+}
+
+.toDo {
+    display: flex;
+    flex-direction: column;
+    padding: 0 15px;
+}
+
+.toDoItems {
+    margin-top: 20px;
+    background: #fff;
+    border-radius: 5px;
+    min-height: 300px;
+}
+
+.toDoItem {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+.toDoItem::after {
+    position: absolute;
+    content: '';
+    background-color: #0083d6;
+    width: 100%;
+    height: 2px;
+    bottom: -2px;
+    left: 0;
+}
+
+.check, .cross {
+    font-size: 25px;
+}
+
+.check {
+    margin-right: 10px;
+}
