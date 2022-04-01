@@ -6,18 +6,25 @@
     flex-direction: column;
     padding: 30px 0;
 }
-    
-.form {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    max-width: 350px;
-}
 
 .toDo {
     display: flex;
     flex-direction: column;
     padding: 0 15px;
+    max-width: 400px;
+    width: 100%;
+}
+
+.form {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+@media (max-width: 480px) {
+    .toDo {
+        width: 100%;
+    }
 }
 
 .toDoItems {
@@ -25,13 +32,14 @@
     background: #fff;
     border-radius: 5px;
     min-height: 300px;
+    width: 100%;
 }
 
 .toDoItem {
     position: relative;
     display: flex;
     align-items: center;
-    padding: 10px;
+    padding: 10px 15px;
 }
 
 .toDoItem::after {
@@ -45,9 +53,14 @@
 }
 
 .check, .cross {
-    font-size: 25px;
+    font-size: 27px;
 }
 
 .check {
-    margin-right: 10px;
+    margin: 0 10px;
+    color: green;
+}
+
+.cross {
+    color: red;
 }

@@ -49,7 +49,7 @@ const Main = () => {
 
     return (
         <div className={style.main}>
-            <h2>Main</h2>
+            <h2>Напиши свою задачу</h2>
             <div className={style.toDo}>
                 <form onSubmit={handleSubmit} className={style.form}>
                     <input onChange={e => {
